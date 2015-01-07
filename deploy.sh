@@ -18,6 +18,7 @@ ln -s ${DIR}/.vimrc ~/.vimrc
 # vim plugins
 rm -rf ~/.vim
 ln -s ${DIR}/vim ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # gitconfig
 rm ~/.gitconfig
