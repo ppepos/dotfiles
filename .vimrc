@@ -1,5 +1,11 @@
 " ---- General settings ---- "
+" MOLOKAI
 color molokai
+
+" Solarized
+" set background=dark
+" colorscheme solarized
+
 set term=xterm-256color
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
@@ -27,11 +33,7 @@ set hid
 set autoindent smartindent
 
 " Set spaces instead of tab
-set expandtab
 set smarttab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
 
 " Line number
 " set cursor offset
@@ -106,6 +108,8 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " Indent Guides
 let g:indent_guides_auto_colors = 0

@@ -1,5 +1,5 @@
 [color]
-    ui = auto
+    ui = 1
 [color "branch"]
     current = red
     local = yellow
@@ -14,6 +14,10 @@
     changed = green
     untracked = cyan
 [alias]
-    st = status
+    st = status -sb
+    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [push]
     default = simple
+[user]
+    email = ppeposp@gmail.com
+    name = Philippe Pepos Petitclerc

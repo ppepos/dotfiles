@@ -182,3 +182,6 @@ PROMPT_COMMAND=prompt_func
 
 set -o vi
 export EDITOR="vi"
+source /etc/bash_completion.d/password-store
+eval "$(hub alias -s)"
+
